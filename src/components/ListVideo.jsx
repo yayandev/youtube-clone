@@ -39,7 +39,7 @@ const ListVideo = () => {
     const getPopularVideos = async () => {
       setLoading(true);
       const response = await axios.get(
-        `${process.env.NEXT_PUBLIC_URL_API}/videos?part=snippet%2Cstatistics&chart=mostPopular&maxResults=21&key=${process.env.NEXT_PUBLIC_KEY}`
+        `${process.env.NEXT_PUBLIC_URL_API}/videos?part=snippet%2Cstatistics&chart=mostPopular&regionCode=ID&maxResults=21&key=${process.env.NEXT_PUBLIC_KEY}`
       );
 
       const data = await response.data;
