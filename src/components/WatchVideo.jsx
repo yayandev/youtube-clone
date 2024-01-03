@@ -42,7 +42,7 @@ const WatchVideo = ({ id }) => {
           src={`https://www.youtube.com/embed/${id}`}
           frameborder="10"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
         <h1 className="font-bold sm:text-lg">{video.snippet.title}</h1>
         <div className="flex gap-2 items-center">
