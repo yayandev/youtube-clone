@@ -35,12 +35,12 @@ const WatchVideo = ({ id }) => {
   console.log(video);
 
   return (
-    <div className="p-3 w-full flex gap-2 sm:flex-row flex-col box-border">
-      <div className="flex-1 space-y-3">
+    <div className="p-3 w-full flex gap-2 md:flex-row flex-col box-border">
+      <div className="flex-[2] space-y-3">
         <iframe
-          className="w-full sm:h-[370px] h-[270px]"
+          className="w-full sm:h-[370px] lg:h-[450px] h-[270px]"
           src={`https://www.youtube.com/embed/${id}`}
-          frameborder="0"
+          frameborder="10"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
@@ -80,8 +80,10 @@ const WatchVideo = ({ id }) => {
           dangerouslySetInnerHTML={{ __html: video?.snippet?.description }}
         ></div>
       </div>
-      <div className="w-full sm:w-80 sm:my-0 my-5">
-        <h1 className="font-bold text-center">Tidak ada video terkait!</h1>
+      <div className="flex-1">
+        <div className="w-full sm:my-0 my-5">
+          <h1 className="font-bold text-center">Tidak ada video terkait!</h1>
+        </div>
       </div>
     </div>
   );
