@@ -48,7 +48,7 @@ const Menus = [
   },
 ];
 
-const Sidebar = () => {
+const Aside = () => {
   return (
     <div className="md:block hidden w-max md:w-64 h-screen border-r p-3 space-y-5 sticky left-0 top-0">
       <Link href={"/"} className="flex gap-3 items-center">
@@ -72,4 +72,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default Aside;
